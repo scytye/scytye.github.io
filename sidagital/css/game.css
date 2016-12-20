@@ -1,0 +1,632 @@
+.wrap-con{
+    height: 100%;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 3;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transform: translate3d(0,0,0);
+    -moz-transform: translate3d(0,0,0);
+    -o-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    padding-bottom: 254px;
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    padding-top: 89px;
+    background: #fcfcfc url('../img/noise.png') 0 0;
+    position: relative;
+    min-height: 755px;
+    z-index: 1;
+}
+#walt_container {
+    background: #1f1d1c url('../img/game/bg.jpg') no-repeat center bottom;
+    height: 610px;
+}
+#walt_container #scene_container {
+    position: relative;
+    width: 100%;
+    max-width: 2000px;
+    height: 610px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#scene_container #stretch {
+    display: none;
+    width: 100%;
+    max-width: 386px;
+    height: 251px;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 35px;
+    color: #3a3a3a;
+    font-size: 23px;
+    font-family: arial;
+    z-index: 20;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#scene_container #stretch div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    -webkit-border-radius: 22px;
+    -moz-border-radius: 22px;
+    border-radius: 22px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    opacity: .8;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+#scene_container #stretch img {
+    display: block;
+    margin: 0 auto 20px;
+}
+#scene_container #stretch .smaller {
+    display: block;
+    margin-top: 5px;
+    font-size: 18px;
+    font-family: arial;
+}
+#walt_container #start_screen .end_score {
+    display: none;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    margin: 23px auto 37px;
+    text-align: center;
+    line-height: 125px;
+    color: #fff;
+    font-size: 117px;
+    background: #ed1165;
+    font-family: arial;
+    font-size: 50px;
+}
+/*-end-*/
+#walt_container #start_screen {
+    width: 640px;
+    height: 510px;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    text-align: center;
+    padding: 75px 30px 60px;
+    color: #3a3a3a;
+    z-index: 10;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.1);
+}
+.heading-three {
+    font-size: 32px;
+    line-height: 40px;
+}
+#start_screen p.rules {
+    margin: 35px auto 0;
+}
+p {
+    margin-top: 30px;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-size: 15px;
+    line-height: 30px;
+    color: #626262;
+    font-family: arial;
+}
+h2{
+    font-size: 50px;
+    color: #4a4a4a;
+    line-height: 55px;
+    display: block;
+    font-family: arial;
+    width: 100%;
+}
+#walt_container #start_screen p.kids {
+    font-family: arial;
+    font-size: 36px;
+    margin: 70px 0 0;
+    color: #4a4a4a;
+}
+#start_screen #start_button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #ed1165;
+    text-transform: uppercase;
+    color: #fff;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    letter-spacing: .1em;
+}
+#start_screen .internal-pages{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    background: #ed1165;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: arial;
+    font-size: 12px;
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    letter-spacing: .1em;
+}
+#start_screen .again-arrow {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#start_screen .again-arrow img {
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#start_screen .again-arrow span {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    letter-spacing: .1em;
+    vertical-align: middle;
+    font-family: arial;
+}
+#start_screen .bg1{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+}
+#walt_container #scene.paused {
+    cursor: auto;
+}
+#walt_container #scene {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    cursor: url('../img/cursor.png') 37 35, crosshair;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#walt_container #scene #foreground {
+    position: absolute;
+    width: 1404px;
+    height: 368px;
+    left: 50%;
+    margin-left: -586px;
+    bottom: 0px;
+    background: url('../img/game/foreground.png') no-repeat 0 0;
+    z-index: 10;
+    pointer-events: none;
+}
+#scene #foreground_barrel_6 {
+    position: absolute;
+    width: 367px;
+    height: 218px;
+    left: 50%;
+    margin-left: 448px;
+    bottom: 136px;
+    background: url('../img/game/foreground_barrel_6.png') no-repeat 0 0;
+    z-index: 4;
+    pointer-events: none;
+}
+#scene #foreground_barrel_7 {
+    position: absolute;
+    width: 156px;
+    height: 92px;
+    left: 50%;
+    margin-left: -326px;
+    bottom: 287px;
+    background: url('../img/game/foreground_barrel_7.png') no-repeat 0 0;
+    z-index: 4;
+    pointer-events: none;
+}
+#walt_container #scene #info {
+    position: absolute;
+    display: none;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    top: 62px;
+    left: 62px;
+    width: 268px;
+    height: 159px;
+    z-index: 11;
+}
+#scene .barrel {
+    width: 338px;
+    height: 481px;
+    left: 50%;
+    position: absolute;
+    cursor: url('../img/cursor.png') 37 35, crosshair;
+    display: block;
+    z-index: 15;
+}
+#scene .barrel#barrel_1 {
+    height: 298px;
+    margin-left: -581px;
+    top: 423px;
+    width: 207px;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+#scene.paused .barrel {
+    cursor: auto;
+}
+#scene .barrel#barrel_2 {
+    height: 205px;
+    margin-left: -277px;
+    top: 298px;
+    width: 142px;
+    -webkit-transform: rotate(-4deg);
+    -moz-transform: rotate(-4deg);
+    -o-transform: rotate(-4deg);
+    -ms-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+#scene .barrel#barrel_3 {
+    height: 103px;
+    margin-left: 8px;
+    top: 242px;
+    width: 68px;
+}
+#scene .barrel#barrel_4 {
+    height: 164px;
+    margin-left: 199px;
+    top: 285px;
+    width: 113px;
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+#scene .barrel#barrel_5 {
+    height: 372px;
+    margin-left: 366px;
+    top: 490px;
+    width: 258px;
+}
+#scene .barrel#barrel_6{
+    height: 148px;
+    margin-left: 529px;
+    top: 261px;
+    width: 103px;
+    z-index: 4;
+}
+#scene .barrel#barrel_7 {
+    height: 48px;
+    margin-left: -262px;
+    top: 229px;
+    width: 38px;
+    z-index: 4;
+}
+#scene a{
+	display: block;
+	position: absolute;
+	z-index: 5;
+	cursor: url('../img/cursor.png') 37 35, crosshair;
+}
+#scene a span{
+	background: url(../img/stage_6_walter.png) no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+#info  #myCanvas{
+    position: absolute;
+    font-size: 110px;
+    left: 26px;
+    top: 24px;
+    z-index: 2;
+    -webkit-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
+    -o-transform: rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    transform: rotate(-60deg);
+}
+#goal{
+	width: 62px;
+	text-align: center;
+	display: block;
+	position: absolute;
+	font-size: 54px;
+	left:50px;
+	top: 50px;
+	z-index: 3;
+}
+#info #score {
+    position: absolute;
+    width: 81px;
+    height: 111px;
+    background: url('../img/game/score.png') no-repeat 0 0;
+    line-height: 120px;
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    top: 24px;
+    right: 26px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 2;
+}
+.footer-small {
+    padding: 55px 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 254px;
+    position: fixed;
+}
+footer{
+    display: block;
+    background: #ed1165;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+}
+footer ul{
+    padding: 0 15px;
+}
+footer div.social_contain {
+    width: 220px;
+    padding-top: 30px;
+    height: 41px;
+    margin: 0 auto;
+    clear: both;
+}
+.footer-small p.legal {
+    clear: both;
+    letter-spacing: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+footer p.legal {
+    margin-top: 20px;
+    margin-bottom: 47px;
+    max-width: none;
+}
+footer p {
+    color: #fff;
+    width: 100%;
+    max-width: 680px;
+    margin: 15px auto 0 auto;
+    text-shadow: none;
+    letter-spacing: -0.007em;
+    font-size: 15px;
+    line-height: 30px;
+    font-family: arial;
+}
+footer ul li {
+    position: relative;
+    display: inline-block;
+}
+footer ul li a {
+    font-size: 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: 20px;
+    font-family: arial
+}
+footer a{
+    display: block;
+    font-size: 30px;
+    font-family: arial;
+    float: left;
+   	color: #fff;
+}
+footer ul li:after {
+    content: '|';
+    position: absolute;
+    color: #fff;
+    right: 5px;
+}
+footer ul li:last-child a {
+    margin-right: 0;
+    padding-right: 0;
+}
+footer div.social_contain a {
+    margin-right: 30px;
+}
+footer div.social_contain a:first-child img {
+    margin-top: 3px;
+}
+footer div.social_contain a:last-child {
+    margin-right: 0;
+}
+footer p.legal .legal-small {
+    font-size: 14px;
+    font-family: arial;
+    padding: 0 10px;
+}
+.contact-form__radio-container label {
+    float: left;
+    position: relative;
+    width: 19%;
+    padding-left: 30px;
+    line-height: 1.7em;
+    cursor: pointer;
+}
+div.divider.grey.last {
+    border-top: 1px solid #e1e1e1;
+}
+div.divider.no_top {
+    margin-top: 0px;
+}
+div.divider.grey {
+    background: rgba(217,217,217,0.1);
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+div.divider {
+    margin-top: 60px;
+    padding-top: 60px;
+    position: relative;
+}
+div.divider.grey article {
+    padding-bottom: 89px;
+    padding-top: 0px;
+}
+
+.col.full {
+    max-width: 710px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+article.brick {
+    background: url('../img/brick_pattern.png') 0 40px;
+}
+.center {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 990px;
+}
+.col {
+    width: 100%;
+    max-width: 461px;
+    float: left;
+    margin: 66px 50px 0 0;
+    position: relative;
+    text-align: center;
+}
+.group {
+    zoom: 1;
+}
+article {
+    padding-top: 55px;
+    position: relative;
+    display: block;
+}
+h3{
+    color: #4a4a4a;
+    font-size: 45px;
+    line-height: 50px;
+    letter-spacing: -0.01em;
+    text-align: center;
+    width: 100%;
+}
+article p {
+    text-align: left;
+}
+.primary-button--center {
+    margin: 30px auto 0;
+    max-width: 220px;
+    width: 100%;
+}
+.primary-button {
+    height: 60px;
+    line-height: 60px;
+    font-family: arial;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ed1165;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    -ms-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+    display: block;
+    text-align: center;
+    letter-spacing: .07em;
+}
+
+#start_screen p.rules span.green {
+    color: #3f8a02;
+}
+#start_screen p.rules span.red {
+    color: #c91c00;
+}
+#start_button:hover{
+	opacity: .8;
+}
+ #scene #info .bg1 {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    top: 0px;
+    left: 0px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    opacity: .4;
+    z-index: 1;
+}
+.finish-text{
+	display: none;
+}
+.roll{
+	display: block;
+	font-style: normal;
+	border: 1px solid transparent;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	color: #fff;
+	opacity: 1;
+	font-family:"微软雅黑";
+	text-align: center;
+	z-index: 7;
+}
+
+
+
+    

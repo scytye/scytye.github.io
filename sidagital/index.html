@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" type="text/css" href="css/global.css"/>
+	</head>
+	<script src="js/src/jquery-1.8.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/src/TweenMax.min.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<header class="clearfix">
+			<h1><a href="index.html" class="logo"></a></h1>
+			<ul class="nav-head clearfix">
+				<li><a href="service.html" class="addborder">SERVICE</a></li>
+				<li><a href="projects.html" class="addborder">PORTFOLIO</a></li>
+				<li><a href="team.html" class="addborder">OUR TEAM</a></li>
+				<li><a href="game.html" class="addborder">THE GAME</a></li>
+				<li><a href="contact.html" class="addborder">CONTACT</a></li>
+				<li style="padding: 0;"><button><a href="contact.html">ABOUT THIS PROJECT</a></button></li>
+			</ul>
+		</header>
+		<script src="js/global.js" type="text/javascript" charset="utf-8"></script>
+		<section class="wrap-con">
+			<div class="wrap-bg">
+				<div id="remind"></div>
+				<div class="maincon">
+					<h2>we create digital chemistry</h2>
+					<p class="info">
+        				Exceptional web design, 
+        				detailed development and unique digital marketing, 
+        				perfectly blended to create engaging user experiences.
+   					</p>
+   					<div class="chemistry-lab">
+   						<div class="stage1">
+   							<div class="bg"></div>
+   							<div class="shelf"></div>
+   							<div class="limit-box">
+   								<canvas id="l-box" width="76" height="120"></canvas>
+   							</div>
+   							<div class="l-bg"></div>
+   							<div class="l-tube"></div>
+   							<div class="tube y up_left" style="top: 55px; left: 647px; height: 94px;">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 70px; right: 371px; width: 158px">
+				                <div class="water x right"></div>
+				            </div>
+				
+				            <!-- BEND -->
+				            <div class="tube y" style="top: 4px; right: 515px; height: 66px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x" style="top: 4px; right: 529px; width: 21px;">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 22px; right: 536px; height: 110px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 113px; right: 550px; width: 21px;">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 3px; right: 557px; height: 110px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x" style="top: 4px; right: 571px; width: 21px;">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 22px; right: 578px; height: 110px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 113px; right: 592px; width: 21px;">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 64px; right: 599px; height: 49px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <!--/ BEND -->
+				
+				            <div class="tube x" style="top: 64px; right: 613px; width: 97px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 82px; right: 696px; height: 156px">
+				                <div class="water y" style="z-index: 7;"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 220px; left: 294px; width: 301px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 238px; left: 581px; height: 64px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 284px; right: 409px; width: 162px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 302px; right: 557px; height: 82px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 365px; right: 571px; width: 86px">
+				                <div class="water x right"></div>
+				            </div>
+				
+				            <!-- BEND -->
+				            <div class="tube y" style="top: 275px; right: 643px; height: 90px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x" style="top: 275px; right: 657px; width: 21px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 293px; right: 664px; height: 173px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 448px; right: 678px; width: 21px">
+				                <div class="water x right"></div>
+				            </div>
+				            <!-- /BEND -->
+				
+				            <div class="tube y" style="top: 369px; right: 685px; height: 79px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x" style="top: 369px; right: 699px; width: 108px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 387px; right: 793px; height: 219px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 588px; left: 197px; width: 48px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 604px; left: 231px; height: 38px">
+				                <div class="water y"></div>
+				            </div>
+   						</div>
+   						<div class="stage2">
+   							<div class="bg"></div>
+   							<div class="shelf"></div>
+   							<div id="imac">
+   								<span class="loading"></span>
+   								<div class="imac-browser">
+   									<div class="browser_header"></div>
+				                    <div class="browser_content"></div>
+				                    <div class="browser_content right"></div>
+				                    <div class="browser_content"></div>
+				                    <div class="browser_content right"></div>
+				                    <div class="browser_content"></div>
+				                    <div class="browser_content right"></div>
+   								</div>
+   							</div>
+   							<div class="feature">
+   								<h3>Not just another agency</h3>
+   								<p>
+				                    We don’t feel part of the nine to five grind, 
+				                    as we’re lucky enough to have developed careers we’re deeply passionate about. 
+				                    We take our extensive range of experience and pour it into creating captivating digital experiences for you and your customers.
+              					</p>
+   							</div>
+   							<div class="tube x" style="top: 135px; right: 860px; width: 65px">
+				                <div class="water x right" data-activates="imac-0"></div>
+				            </div>
+				            <div class="tube y" style="top: 153px; right: 910px; height: 241px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 376px; left: 79px; width: 241px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 394px; left: 305px; height: 73px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 449px; left: 319px; width: 21px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 380px; left: 326px; height: 69px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 377px; left: 340px; width: 234px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 284px; left: 560px; height: 93px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x" style="top: 284px; left: 574px; width: 21px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 302px; left: 581px; height: 92px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 376px; left: 595px; width: 65px">
+				                <div class="water x"></div>
+				            </div>
+				
+				            <!--// BULB -->
+				            <div id="bulb">
+				                <canvas width="76" height="120"></canvas>
+				            </div>
+				
+				            <div class="tube x no_curve rounded" style="top: 380px; left: 662px; width: 25px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y bulb_enter rounded" style="top: 381px; left: 682px; height: 47px">
+				                <div class="water y" data-activates="bulb-0"></div>
+				            </div>
+				            <div class="tube x hide" style="top: 510px; left: 699px; width: 220px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube x no_curve rounded rounded_left" style="top: 380px; left: 753px; width: 21px">
+				                <div class="water x rounded_left"></div>
+				            </div>
+				
+				            <div class="tube x" style="top: 380px; left: 775px; width: 138px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 398px; left: 899px; height: 487px">
+				                <div class="water y" data-activates="ipad-50"></div>
+				            </div>
+   						</div>
+   						<div class="stage3">
+   							<div class="bg"></div>
+   							<div class="shelf"></div>
+   							<div id="ipad">
+   								<span class="loading"></span>
+   								<span class="browser"></span>
+   							</div>
+   							<div id="ipad-mini">
+   								<span class="loading"></span>
+   								<span class="browser"></span>
+   							</div>
+   							<div id="iphone">
+   								<span class="loading"></span>
+   								<span class="browser"></span>
+   							</div>
+   							<div class="feature">
+   								<h3>Always responsive</h3>
+   								<p>
+				       			 On average 50% of site traffic is now via a mobile, 
+				       			 so it is essential that your site displays and functions correctly on any device your customers choose to use. 
+				       			 However your site is accessed we ensure it will be responsive, 
+				       			 intuitive and deliver a great user experience.
+              					</p>
+   							</div>
+   							<div class="tube y" style="top: -21px; right: 187px; height: 45px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x" style="top: -21px; right: 201px; width: 98px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: -3px; right: 285px; height: 359px;">
+				                <div class="water y" data-activates="ipad_mini-40"></div>
+				            </div>
+				
+				            <!--// IPAD MINI -->
+				            <div class="tube x" style="top: 120px; right: 434px; width: 45px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 138px; right: 465px; height: 359px">
+				                <div class="water y" data-activates="iphone-40"></div>
+				            </div>
+				
+				            <!--// IPHONE -->
+				            <div class="tube x" style="top: 257px; right: 534px; width: 46px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 275px; right: 566px; height: 125px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 382px; right: 580px; width: 258px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 400px; right: 824px; height: 110px">
+				                <div class="water y"></div>
+				            </div>
+   						</div>
+   						<div class="stage4">
+   							<div class="bg"></div>
+   							<div class="shelf"></div>
+   							<div id="bag"></div>
+   							<div id="bag-back"></div>
+   							<div id="bag-last" class="fullbag"></div>
+   							<div id="bag-middle" class="fullbag"></div>
+   							<div id="bag-front" class="fullbag">
+   								<div id="bag-shirt"></div>
+	   							<div id="shirt-fill"></div>
+	   							<div id="shirt"></div>
+   							</div>
+   							<div id="bulb_large">
+				                <canvas width="85" height="137"></canvas>
+				            </div>
+   							<div class="feature">
+   								<h3> We’ve got your back</h3>
+   								<p>
+				       			We have built sites that process thousands of transactions so we understand that data security is of the utmost importance.
+				       			We meticulously and rigorously test everything we produce,
+				       			as well as PEN test sites with financial transactions.
+                				</p>
+   							</div>
+   							 <div class="tube y" style="top: -3px; left: 152px; height: 126px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x hide" style="top: 0px; left: 0px; width: 350px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y up_right" style="top: -46px; left: 227px; height: 106px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: -32px; left: 262px; width: 109px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: -14px; left: 356px; height: 384px">
+				                <div class="water y" ></div>
+				            </div>
+				            <div class="tube x" style="top: 266px; right: 797px; width: 43px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 284px; left: 150px; height: 147px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 413px; left: 164px; width: 494px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 430px; left: 644px; height: 124px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 536px; left: 658px; width: 21px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 407px; left: 665px; height: 129px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x" style="top: 407px; left: 679px; width: 21px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 425px; left: 686px; height: 149px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x" style="top: 556px; left: 700px; width: 21px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 407px; left: 707px; height: 149px; transform: rotate(180deg)">
+				                <div class="water y bottom"></div>
+				            </div>
+				            <div class="tube x" style="top: 407px; left: 721px; width: 21px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 425px; left: 728px; height: 83px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 490px; left: 742px; width: 84px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 508px; left: 812px; height: 150px">
+				                <div class="water y"></div>
+				            </div>
+   						</div>
+   						<div class="stage5">
+   							<div class="bg"></div>
+   							<div class="shelf"></div>
+   							<canvas id="heart" height="157";wwidth="350"></canvas>
+   							<img src="img/stage_5_bug.gif" id="bug" style="display: inline;"/>
+   							<div class="feature">
+   								<h3>Let’s stay together</h3>
+   								<p>
+   									Don’t worry; we’re not a fair-weather friend. When you start a project with us we don’t put any restrictions or end dates on the support available. Think of us as your outsourced web team. Reliable and reassuring, it’s a comfort to know we’re always there for any future updates or amendments you might need.
+   								</p>
+   							</div>
+   							<div class="tube x" style="top: 279px; right: 371px; width: 45px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 297px; right: 402px; height: 134px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 413px; right: 416px; width: 465px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 430px; right: 866px; height: 22px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 435px; left: 124px; width: 149px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 452px; left: 258px; height: 22px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 457px; right: 732px; width: 149px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 474px; left: 110px; height: 22px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 479px; left: 124px; width: 149px">
+				                <div class="water x"></div>
+				            </div>
+				            <div class="tube y" style="top: 496px; left: 258px; height: 22px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 497px; right: 732px; width: 149px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 514px; left: 109px; height: 22px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 519px; left: 123px; width: 385px">
+				                <div class="water x"></div>
+				            </div>
+				
+				            <!--// SPLIT -->
+				            <div class="tube y" style="top: 536px; left: 494px; height: 74px">
+				                <div class="water y"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 592px; left: 508px; width: 405px">
+				                <div class="water x" data-joint="true"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 592px; right: 496px; width: 407px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 610px; left: 88px; height: 360px">
+				                <div class="water y" data-joint="true"></div>
+				            </div>
+				            <div class="tube y" style="top: 610px; left: 899px; height: 360px">
+				                <div class="water y"></div>
+				            </div>
+   						</div>
+   						<div class="stage6">
+   							<div class="bg"></div>
+   							<div id="sid" class="activated">
+   								<div class="base">
+   									<div id="arm">
+   										<div class="claw"></div>
+   									</div>
+   								</div>
+   							</div>
+   							<div id="container">
+   								<div class="barrel"></div>
+   								<div class="game-btn">
+   									<a href="game.html" class="button">play game</a>
+   								</div>
+   								<div class="shooting"></div>
+   								<div class="walter"></div>
+   							</div>
+   							<div class="feature">
+   								<h3> Game-changing digital marketing</h3>
+   								<p>
+									Blending the physical and digital worlds; 
+									our approach to digital marketing can be pretty mind blowing – our hack 									project Sid drew <a href="">250,000 new visitor</a> in four weeks. 
+									Challenge us to button up our lab coats and see what we can do to make you 									really stand out from the crowd.
+                				</p>
+   							</div>
+   							<div class="tube x" style="top: 189px; left: 102px; width: 201px">
+				                <div class="water x" data-joint="true" data-activates="sid_parts-0"></div>
+				            </div>
+				            <div class="tube x" style="top: 189px; right: 91px; width: 187px">
+				                <div class="water x right"></div>
+				            </div>
+				            <div class="tube y" style="top: 230px; left: 208px; height: 153px">
+				                <div class="water y" data-joint="true"></div>
+				            </div>
+				            <div class="tube y" style="top: 230px; right: 196px; height: 153px">
+				                <div class="water y"></div>
+				            </div>
+				
+				            <div class="tube x double_bend" style="top: 383px; left: 22px; width: 200px">
+				                <div class="water x right" data-joint="true"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 383px; right: 10px; width: 200px">
+				                <div class="water x"></div>
+				            </div>
+				
+				            <div class="tube y" style="top: 387px; left: 8px; height: 362px">
+				                <div class="water y" data-joint="true"></div>
+				            </div>
+				            <div class="tube y" style="top: 387px; right: -4px; height: 362px">
+				                <div class="water y"></div>
+				            </div>
+				
+				            <div class="tube x double_bend" style="top: 749px; left: 8px; width: 475px">
+				                <div class="water x" data-joint="true"></div>
+				            </div>
+				            <div class="tube x double_bend" style="top: 749px; right: -4px; width: 475px">
+				                <div class="water x right"></div>
+				            </div>
+				
+				            <div class="tube y" style="top: 753px; left: 483px; height: 150px">
+				                <div class="water y" data-joint="true"></div>
+				            </div>
+				            <div class="tube y" style="top: 753px; right: 471px; height: 150px">
+				                <div class="water y"></div>
+				            </div>
+   						</div>
+   						<div class="stage7">
+   							<div class="bg"></div>
+   							<div class="shelf"></div>
+   							<div class="formula">
+   								<span class="si-ele"></span>
+   								<span class="line-bond down"></span>
+   								<a href="#" class="coop"></a>
+   								<span class="line-bond"></span>
+   								<a href="#" class="hasbro"></a>
+   								<span class="line-bond up"></span>
+   								<span class="si-ele"></span>
+   								<span class="line-bond y"></span>
+   								<a href="#" class="planefinder"></a>
+   								<span class="line-bond down"></span>
+   								<span class="si-ele"></span>
+   								<span class="line-bond"></span>
+   								<a href="#" class="more"></a>
+   								<span class="line-bond up"></span>
+   								<span class="si-ele"></span>
+   								<div class="for-logo"></div>
+   							</div>
+   							<div class="feature">
+   								<h3>Let’s create digital chemistry together</h3>
+   								<p>
+									
+                    We’re a passionate and friendly bunch here in our sunny Southsea studio. Experienced, flexible and the proud recipients of lots of <a href="">get feeback</a> from previous clients. Why not get in touch and let us know what your project involves?
+                
+                			</p>
+   							</div>
+   							<div class="tube y" style="top: 35px; left: 495px; height: 487px">
+				                <div class="water y"></div>
+				            </div>
+   						</div>
+   					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="group">
+			<div class="center group">
+		        <h4>Tell us about your project</h4>
+		        <p>
+		            Do you have a project you think we will love? Then please complete our short project enquiry form.
+		        </p>
+		        <a href="contact.html" class="kickoff button">Start your project</a>
+		        <ul>
+		          <li><a href="#">UX Lab</a></li>
+		          <li><a href="#">Open Device Lab</a></li>
+		          <li><a href="#">Office address</a></li>
+		          <li><a href="#" onclick="$('.registered_address').addClass('show'); return false;">Registered address</a></li>
+		        </ul>
+		        <div class="social_contain">
+		          <a href="#" target="_blank" title="Follow us on Twitter"><img class="x2" width="32" src="img/icon-twitter.png" alt="twitter-icon" /></a>
+		          <a href="#" target="_blank" title="Like us on Facebook"><img class="x2" width="32" src="img/icon-facebook.png" alt="facebook-icon" /></a>
+		          <a href="#" target="_blank" title="Follow us on Dribbble"><img class="x2" width="32" src="img/icon-dribbble.png" alt="dribble-icon" /></a>
+		          <a href="#" target="_blank" title="Follow us on Instagram"><img class="x2" width="32" src="img/icon-instagram.png" alt="instagram-icon" /></a>
+		      </div>
+		      <!--/social_contain-->
+		      	<p class="legal">
+		        	<span class="legal-small">
+			          	Si digital is a trading name of Something Interesting Limited, registered in England and Wales. 
+			          	Our registered number is 04270457. 
+		        	</span>
+		      	</p>
+			</div>
+		</footer>
+		<script type="text/javascript">
+			var siEle = document.getElementsByClassName('si-ele')
+			siEle[0].style.left = '553px';
+			siEle[0].style.top = '62px';
+			siEle[1].style.left = '970px';
+			siEle[1].style.top = '62px';
+			siEle[2].style.left = '970px';
+			siEle[2].style.top = '411px';
+			siEle[3].style.left = '553px';
+			siEle[3].style.top = '411px';
+			var oa = document.getElementsByClassName('formula')[0].getElementsByTagName('a')
+			oa[0].style.left = '599px';
+			oa[0].style.top = '49px';
+			oa[1].style.left = '793px';
+			oa[1].style.top = '49px';
+			oa[2].style.left = '793px';
+			oa[2].style.top = '272px';
+			oa[3].style.left = '599px';
+			oa[3].style.top = '272px';
+			var band = document.getElementsByClassName('line-bond')
+			band[0].style.left = '573px';
+			band[0].style.top = '83px';
+			band[1].style.left = '741px';
+			band[1].style.top = '90px';
+			band[2].style.left = '937px';
+			band[2].style.top = '83px';
+			band[3].style.left = '865px';
+			band[3].style.top = '217px';
+			band[4].style.left = '937px';
+			band[4].style.top = '404px';
+			band[5].style.right = '195px';
+			band[5].style.top = '396px';
+			band[6].style.right = '387px';
+			band[6].style.top = '404px';
+			var shelf = document.getElementsByClassName('shelf');
+			shelf[0].style.left = '280px'
+			shelf[0].style.top = '142px'
+			shelf[1].style.left = '66px'
+			shelf[1].style.top = '283px'
+			shelf[1].style.height = '21px'
+			shelf[2].style.left = '410px'
+			shelf[2].style.top = '305px'
+			shelf[2].style.height = '21px'
+			shelf[3].style.left = '150px'
+			shelf[3].style.top = '316px'
+			shelf[3].style.height = '21px'
+			shelf[4].style.left = '574px'
+			shelf[4].style.top = '329px'
+			shelf[4].style.height = '21px'
+			shelf[5].style.left = '495px'
+			shelf[5].style.top = '497px'
+		</script>
+	</body>
+	<script src="js/water.js" type="text/javascript" charset="utf-8"></script>
+</html>
+
