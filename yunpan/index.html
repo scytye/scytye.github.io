@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>网页版微云</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" href="css/reset.css" />
+		<script src="js/data.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" src="js/tree.js" ></script>
+	</head>
+	<body>
+		<header class="clearfix">
+			<div class="head-left">
+				<h1><a href="javascript:;"><span class="ico_logo"></span></a></h1>
+				<!--<div class="head-ad-left"><a href="javascript:;">微云会员首次开通低至一元</a></div>-->
+			</div>
+			<!--<ul class="head-right clearfix">-->
+				<!--<li class="head-ad-right">-->
+					<!--&lt;!&ndash;<a href="javascript:;" class="renew-btn"><span class="ico_vip"></span> 项目内容</a>&ndash;&gt;-->
+					<!--&lt;!&ndash;<a href="javascript:;" class="download-btn"><span class="ico_app"></span> 操作提示</a>&ndash;&gt;-->
+				<!--</li>-->
+				<!--&lt;!&ndash;<li class="header-search">-->
+					<!--<span class="ico_mirror"></span>-->
+					<!--<input type="text" name="text" id="text" value="" placeholder="搜索全部文件"/>-->
+				<!--</li>&ndash;&gt;-->
+				<!--<li class="main-face">-->
+					<!--<div class="imgbox" style="position: relative;">-->
+						<!--<span class="ico_vip" style="position: absolute; left: 6px;top: 10px;"></span>-->
+						<!--<img src="img/pic2.jpg"/>-->
+					<!--</div>-->
+					<!--<span class="ico_down"></span>-->
+				<!--</li>-->
+			<!--</ul>-->
+			<!--<ul class="info_con" style="display:none;">-->
+				<!--<li>支持拖拽移动，选择移动，要移动的文件必须有文件被选中</li>-->
+				<!--<li>支持重命名、新建，鼠标左键点击空白地方结束操作</li>-->
+				<!--<li>支持上传，只支持图片预览</li>-->
+			<!--</ul>-->
+		</header>
+		<div class="main-nav">
+			<input type="file" name="f" id="f" value="" />
+			<div class="upload">+ 上传</div>
+			<ul class="nav-box">
+				<li data-class="root"><span class="ico_all" data-class="root"></span><em data-class="root">目录</em></li>
+				<li data-class="recent"><span class="ico_recent" data-class = "recent"></span><em data-class="recent">最近</em></li>
+				<li class="nav-gap"><span class="gap"></span></li>
+				<li data-class="word"><span class="ico_word" data-class="word"></span><em data-class="word">文档</em></li>
+				<li data-class="photo"><span class="ico_photo" data-class="photo"></span><em data-class="photo">图片</em></li>
+				<li data-class="music"><span class="ico_music" data-class="music"></span><em data-class="music">音乐</em></li>
+				<li data-class="video"><span class="ico_video" data-class="video"></span><em data-class="video">视频</em></li>
+				<!--<li><span class="ico_note"></span><em>笔记</em></li>-->
+				<!--<li class="nav-gap"><span class="gap"></span></li>-->
+				<!--<li data-class="recycle"><span class="ico_recycle" daata-class = "recycle"></span><em data-class = "recycle">回收站</em></li>-->
+			</ul>
+		</div>
+		<div id="main-bar1">
+			<div class="nav-con clearfix">
+				<ul class="btn-message">
+					<!--<li><span class="ico_download"></span>下载</li>
+					<li><span class="ico_link"></span>分享</li>-->
+					<li id="move-files"><span class="ico_move"></span>移动到</li>
+					<li id="rename"><span class="ico_rewrite"></span>重命名</li>
+					<li id="dele"><span class="ico_del"></span>删除</li>
+					<li id="creatfiles"><span class="ico_create"></span>新建文件夹</li>
+					<!--<li><span class="ico_ref"></span></li>-->
+				</ul>
+				<div id="view-btn">
+					<a href="#" class="base-btn btn-focus"><span class="ico_tree"></span></a>
+					<!--<a href="#" class="view-btn"><span class="ico_sort"></span></a>-->
+				</div>
+			</div>
+		</div>
+		<div id="main-bar2">
+			<div class="inner" id="treepath">
+				<div class="wrap">
+					<span class="checkall" id="checkall"></span>
+					<div class="main-path">
+						<i style="z-index: 10; margin-left: -14px; background-position-y: -200px;"fileId = '0' nofile = "floder"><span>微云</span></i>
+						<em id="bread" style="margin-left: -14px;"></em>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="main-content" class="main-con">
+			<div class="boxselect" style="display: block;z-index: 20"></div>
+			<div id="inner">
+				<div id="main-box" class="wrap-con">
+					<div id="section-view"></div>
+					<div id="sidebox" class="tree-nav" style="z-index: 9;">
+						<div class="item" fileId="0" nofile = "floder">
+							<a href="#" class="link">
+								<span style="display:inline-block;">微云</span>
+								<i class="ico"></i>
+							</a>
+						</div>
+						<!--<ul id="item-box" style="padding-left: 20px;"></ul>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="image-box" style="display: none">
+			<div class="pichead">
+				<span style="background: url(img/pich.png) no-repeat;width: 136px;height: 48px;display: inline-block;vertical-align: middle;"></span>
+				<div class="box-right">
+					<span style="width: 60px;height: 48px;display: inline-block;vertical-align: top;margin-top: 0;"></span>
+					<span style="display: inline-block;height: 48px;width: 60px; font: 36px/40px '微软雅黑';color: #fff;text-align: center;" >×</span>
+				</div>
+			</div>
+			<div class="image-con"></div>
+		</div>
+		<div id="tips">
+			<span class="tipicon"></span>
+			<span class="tipcon">文件名有冲突，请重新新建</span>
+		</div>
+		<div id="tipbox" style="display: none;">
+			<h4 class="tip-head">确认删除</h4>
+			<div class="tip-con">
+				是否确认把所选文件删除
+			</div>
+			<div>
+				<input type="button" name="" id="affirm" value="确认" />
+				<input type="button" name="" id="cancel" value="取消" />
+			</div>
+		</div>
+		<div id="mask"></div>
+		<div class="save-box" style="display: none;">
+			<h3>
+				<p class="title">选择存储位置</p>
+				<a href="javascript:void(0);" class="close" title="关闭">×</a>
+			</h3>
+			<div class="content">
+				<div class="dir-file">
+					<span class="file-img"></span>
+					<span class="file-name">
+						<em>22</em>
+						<em></em>
+					</span>
+				</div>
+				<div class="dir-box">
+					<div class="cur-dir">
+						<span>移动到：</span><span class="fileMovePathTo">2333</span>
+					</div>
+					<div class="dirTree"></div>
+				</div>
+				
+			</div>
+			<div class="btns">
+				<span class="error"></span>
+				<a href="javascript:void(0)" class="confirm1">选定</a>
+				<a href="javascript:void(0)" class="cancel1">取消</a>
+			</div>
+		</div>
+		<div id="box" class="nonebox">
+			<span id= 'filesnum'>1</span>
+			<!--<span class="movefiles"></span>-->
+		</div>
+		<input type="hidden" id="getPidInput" value="0" />
+	</body>
+	<script src="js/view.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</html>
