@@ -33,7 +33,7 @@ var projects = [
 		},
 		{
 			projectName:"移动端网页天气",
-			projectWebsite:"#",
+			projectWebsite:"javascript:;",
 			startTime:"2016.11",
 			endTime:"至今",
 			projectExplain:"本页面是由网络API为数据支持的，主要实现效果：1、处理API数据，渲染页面2、利用canvas绘制温度图表 3、点击加号按钮搜索城市信息>",
