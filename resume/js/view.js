@@ -1,5 +1,5 @@
 var currents = "step1";
-$("body").height(8000);
+$("body").height(9000);
 $("#resume_content")[0].style.height = window.innerHeight*2 +'px';
 $(".sence").height($(window).height());
 $(".hea_intro").css("top",0);
@@ -25,6 +25,10 @@ function scale(){
 	var s = scrollNum/maxH
 	return s;
 }
+$(".sence").bind("mouseup", function (e) {
+	e.preventDefault();
+	e.stopPropagation();
+})
 $(window).bind("mousedown",function(){
 	$(window).unbind("scroll",scrollT)
 })
@@ -34,7 +38,7 @@ $(".controls").bind("mouseup",function(){
 	timeScroll.tweenTo(nexts);
 })
 $(window).bind("mouseup",upFn);
-function upFn(){
+function upFn(e){
 	var s1 = scale();
 	var time1 = s1*timeScroll.totalDuration();
 	var prevs = timeScroll.getLabelBefore(time1);
@@ -62,6 +66,7 @@ function upFn(){
 	var scrollAnimate = new TimelineMax();
 	scrollAnimate.to("html,body",d,{scrollTop:positionY});
 	currents = step;
+	e.stopPropagation()
 }
 var timeScroll = null;
 function tScroll(){
