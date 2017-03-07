@@ -33,11 +33,11 @@ var projects = [
 		},
 		{
 			projectName:"移动端网页天气",
-			projectWebsite:"javascript:;",
+			projectWebsite:"http://louyuanwan.iok.la/mojiApp",
 			startTime:"2016.11",
 			endTime:"至今",
-			projectExplain:"本页面是由网络API为数据支持的，主要实现效果：1、处理API数据，渲染页面2、利用canvas绘制温度图表 3、点击加号按钮搜索城市信息>",
-			projectLabel:["html","css","js"],
+			projectExplain:"本页面是由网络API为数据支持的，主要实现效果：1、处理API数据，渲染页面2、利用canvas绘制温度图表 3、搜索城市信息>",
+			projectLabel:["html","css","js","css3"],
 			projectThumbnail:"images/wea.png"
 		}
 ]

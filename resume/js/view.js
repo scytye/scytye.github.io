@@ -1,5 +1,5 @@
 var currents = "step1";
-$("body").height(9000);
+$("body").height(15000);
 $("#resume_content")[0].style.height = window.innerHeight*2 +'px';
 $(".sence").height($(window).height());
 $(".hea_intro").css("top",0);
