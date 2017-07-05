@@ -1,0 +1,1 @@
+"use strict";var mySwiepr=new Swiper(".swiper-container",{useCSS3Transforms:!1,swipeToNext:!0,mode:"vertical",mousewheelControl:!0,keyboardControl:!0}),toNext=document.getElementById("toNext");toNext&&toNext.addEventListener("click",function(e){e.preventDefault(),mySwiepr.swipeNext()});
